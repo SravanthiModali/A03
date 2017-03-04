@@ -1,0 +1,25 @@
+<% include header %>
+
+<div class="panel panel-default">
+<div class="panel-heading">
+<div class="text-muted pull-right">
+
+<div class="panel-body">
+<h2> Hey! How are you doing today? </h2>
+      <h3> Let me know how you like my web page in the comment box below. You can post me your questions too.</h3>
+
+      <form method="POST" action="Contact">
+        Name:  <input type="text" name="Name" id="Name">  <br>
+        Email: <input type="text" name="Email" size="30"> <br>
+        <textarea name="comment" placeholder="Enter your comments/questions here..." rows="4" cols="50"> </textarea>
+        <br>
+  
+  <input type="submit" value="Submit"> <%=message%>
+</form>
+
+            
+</div>
+</div>
+
+<% include footer %>
+

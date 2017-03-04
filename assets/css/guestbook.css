@@ -1,0 +1,15 @@
+body{
+    background-image: url("../white.jpg");
+    background-repeat: no-repeat;
+    background-size: 1600px 800px;
+}
+h1{
+    color:mediumvioletred;
+}
+.btn{
+    background-color:deepskyblue ;
+    
+}
+.panel-body{
+    color: deepskyblue;
+}

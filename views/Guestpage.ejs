@@ -1,0 +1,24 @@
+<% include header %>
+<h1>
+Express Guestbook
+<a href="/new-entry" class="btn btn-primary pull-right" style="float:right">
+<button class="btn btn-primary">Write in the guestbook </a></button>
+
+</h1>
+<% if (entries.length) { %>
+<% entries.forEach(function(entry) { %>
+<div class="panel panel-default">
+<div class="panel-heading">
+<div class="text-muted pull-right">
+<%= entry.published %></div>
+<%= entry.title %></div>
+<div class="panel-body">
+<%= entry.content %>
+</div>
+</div>
+<% }) %>
+<% } else { %>
+No entries! <a href="new-entry">Add one!</a>
+<% } %>
+<% include footer %>
+
